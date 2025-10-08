@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f9f8f8;
+  font-family: system-ui, sans-serif;
+}
+
+.telecommande {
+  display: grid;
+  grid-template-columns: repeat(6, 64px);
+  grid-auto-rows: 48px;
+  gap: 8px;
+  padding: 12px;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.entete,.fin {
+  grid-column: 1 / -1;
+  display: grid;
+  place-items: center;
+  border: 2px solid #000;
+  background: #fff;
+  height: 44px;
+  font-weight: 600;
+}
+
+.telecommande button,
+.telecommande .vide,
+.telecommande .display {
+  border: 1px solid #000;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.display {
+  grid-column: 2 / span 4;
+}
+
+.a { grid-column: 1; }
+.e { grid-column: 6; }
+
+.plus  { grid-column: 1; }
+.vide  { background: #fff; }
+.moins { grid-column: 6; }
+
+.prev {
+  grid-column: 1 / span 2;
+  grid-row: span 2;
+}
+
+.next {
+  grid-column: 3 / span 2;
+  grid-row: span 2;
+}
+
+.av    { grid-column: 5; }
+.enreg { grid-column: 6; }
+.play  { grid-column: 5; }
+.stop  { grid-column: 6; }
+
+.telecommande button {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+.telecommande button:active { background: #eee; }
