@@ -1,0 +1,14 @@
+body {
+    background: white
+}
+
+#mariopixel td {
+     width: 20px;                 
+     height: 20px;                
+     }
+.R{background-color: red;}                
+.dB{background-color: rgb(2, 68, 161);}
+.M{background-color: brown;}
+.N{background-color: black;}
+.Be{background-color: rgb(232, 206, 112);}
+.J{background-color: yellow;}
